@@ -1,0 +1,98 @@
+#calcContainer {
+  width: 400px;
+  height: 380px;
+  border: 1px solid black;
+  margin: auto;
+}
+#output {
+  margin: auto;
+  display: block;
+  margin-top: 10px;
+  font-size: 40px;
+  width: 366px;
+}
+#topRowGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin-top: 10px;
+  justify-items: center;
+}
+#bodyGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin-top: 10px;
+  grid-column-gap: 3px;
+  grid-row-gap: 8px;
+  justify-items: center;
+  grid-template-areas:
+    "seven eight nine equals"
+    "four five six equals"
+    "one two three equals"
+    "zero period clear equals";
+}
+button {
+  width: 70px;
+  font-size: 40px;
+}
+.arithmetic {
+  background-color: hsl(10, 10%, 80%);
+  border: 1px solid black;
+}
+.arithmetic:hover {
+  background-color: rgba(0,0,0,.1)
+}
+.equals {
+  background-color:rgba(0, 0, 256, .5);
+  border: 1px solid black;
+}
+.equals:hover {
+  background-color: rgba(0,0,256, .25);
+}
+.numbers:hover {
+  background-color: hsl(0, 10%, 90%);
+}
+#equals {
+  grid-area: equals;
+}
+#clear {
+  grid-area: clear;
+}
+#period {
+  grid-area: period;
+}
+#zero {
+  grid-area: zero;
+}
+#one {
+  grid-area: one;
+}
+#two {
+  grid-area: two;
+}
+#three {
+  grid-area: three;
+}
+#four {
+  grid-area: four;
+}
+#five {
+  grid-area: five;
+}
+#six {
+  grid-area: six;
+}
+#seven {
+  grid-area: seven;
+}
+#eight {
+  grid-area: eight;
+}
+#nine {
+  grid-area: nine;
+}
+#output {
+  text-align: end;
+  background-color: silver;
+  border: 1px solid black;
+  height: 50px;
+}
